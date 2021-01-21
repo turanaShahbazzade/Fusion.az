@@ -69,7 +69,7 @@ COLOR CODE2: #F2184F
 .bg-theme-color-2,
 .line-bottom:after,
 .line-bottom-center:after {
-  background: #F2184F !important;
+    background: #f9a01af7 !important;
 }
 .team-block .team-thumb .styled-icons a:hover,
 .work-gallery .gallery-thumb .styled-icons a:hover,
