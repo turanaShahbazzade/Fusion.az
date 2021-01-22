@@ -10,14 +10,16 @@ namespace Fusion.az.Models
     {
         public int Id { get; set; }
         public string Logo { get; set; }
+        [Required, StringLength(200)]
+        public string Address { get; set; }
+        [Required, StringLength(200)]
+        public string WebAddress { get; set; }
         [Required, StringLength(25)]
         public string  Phone { get; set; }
         [Required, StringLength(100)]
         public string OpenMonFri { get; set; }
         [Required, StringLength(100)]
         public string OpenSat { get; set; }
-        [Required, StringLength(100)]
-        public string Close { get; set; }
         [Required, StringLength(100)]
         public string Mail { get; set; }
         public string Facebook { get; set; }

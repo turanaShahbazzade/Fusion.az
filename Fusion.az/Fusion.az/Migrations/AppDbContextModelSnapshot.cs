@@ -26,10 +26,10 @@ namespace Fusion.az.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Close")
+                    b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Facebook")
                         .HasColumnType("nvarchar(max)");
@@ -59,6 +59,11 @@ namespace Fusion.az.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(25)")
                         .HasMaxLength(25);
+
+                    b.Property<string>("WebAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Whatsapp")
                         .HasColumnType("nvarchar(max)");

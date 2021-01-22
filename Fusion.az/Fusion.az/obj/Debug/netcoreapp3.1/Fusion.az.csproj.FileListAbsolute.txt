@@ -153,3 +153,8 @@ C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Fusion.az.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Fusion.az.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\_ViewStart.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\_ViewImports.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Dashboard\Index.cshtml.g.cs
