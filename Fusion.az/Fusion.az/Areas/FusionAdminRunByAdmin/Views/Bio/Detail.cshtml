@@ -1,0 +1,42 @@
+﻿@model Bio
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Logo</p>
+            <img class="img-fluid" src="~/assets/images/@Model.Logo" />
+        </div>
+        <div class="col-lg-6">
+            <p>Socials</p>
+            <ul>
+                <li>
+                    @Model.Mail
+                </li>
+                <li>
+                    @Model.Instagram
+                </li>
+                <li>
+                    @Model.Facebook
+                </li>
+            </ul>
+            <p>Contact</p>
+            <ul>
+                <li>
+                    @Model.Phone
+                </li>
+            </ul>
+            <p>Address</p>
+            <ul>
+                <li>
+                    @Model.Address
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a class="btn mt-3" asp-controller="Bio" asp-action="Index"> Go Back </a>
+    <a class="btn btn-update mt-3" asp-controller="Bio" asp-action="Update" asp-route-id="@Model.Id" > Update </a>
+</div>
+

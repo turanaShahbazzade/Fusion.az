@@ -32,17 +32,8 @@
                 </div>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                <ul class="navbar-nav mr-lg-4 w-100">
-                    <li class="nav-item nav-search d-none d-lg-block w-100">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="search">
-                                    <i class="mdi mdi-magnify"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">
-                        </div>
-                    </li>
+                <ul class="navbar-nav mr-lg-4 w-100 justify-content-center">
+                  <li> <h3  class="text-center admin-heading"> Welcome to Fusion's Admin Panel   </h3>   </li>
                 </ul>
                 <ul class="navbar-nav navbar-nav-right">
                    
@@ -82,13 +73,13 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <i class="mdi mdi-circle-outline menu-icon"></i>
-                            <span class="menu-title">Bios</span>
+                            <span class="menu-title">Bio</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-area="FusionAdminRunByAdmin" asp-controller="Bio" asp-action="Index" >Bios</a></li>
+                             
                             </ul>
                         </div>
                     </li>
@@ -178,6 +169,7 @@
     <script src="~/admin/js/data-table.js"></script>
     <script src="~/admin/js/jquery.dataTables.js"></script>
     <script src="~/admin/js/dataTables.bootstrap4.js"></script>
+    @RenderSection("Scripts", false)
     <!-- End custom js for this page-->
 </body>
 

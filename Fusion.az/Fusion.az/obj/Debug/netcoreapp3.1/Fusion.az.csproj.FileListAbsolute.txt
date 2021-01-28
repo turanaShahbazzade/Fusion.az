@@ -158,3 +158,7 @@ C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\_ViewStart.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\_ViewImports.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Bio\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Validation.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Bio\Detail.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Bio\Update.cshtml.g.cs
