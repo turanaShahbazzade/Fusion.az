@@ -1,5 +1,4 @@
-﻿@model Bio
-
+﻿
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <!-- Mirrored from html.kodesolution.live/s/studypress/v6.0/demo/index-mp-layout10.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2021 17:35:59 GMT -->
@@ -12,11 +11,13 @@
     <meta name="keywords"
           content="ielts, general, toefl, education html theme, elearning, learning," />
     <meta name="author" content="ThemeMascot" />
+   
 
     <!-- Page Title -->
     <title>Fusion | Language Courses </title>
 
     <!-- Favicon and Touch Icons -->
+
     <link href="~/assets/images/fusion-logo-approved.jpg" rel="shortcut icon" type="image/jpg" />
     <!-- Stylesheet -->
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -65,13 +66,8 @@
     <!-- Revolution Slider 5.x SCRIPTS -->
     <script src="~/assets/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    @RenderSection("LinksHome", false)
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body class="">
     <div id="wrapper" class="clearfix">
@@ -97,51 +93,30 @@
         <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
     </div>
     <!-- end wrapper -->
-
     <!-- Footer Scripts -->
     <!-- JS | Custom script for all pages -->
     <script src="~/assets/js/custom.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+            src="~/assets/js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+  
+    <script  src="~/assets/js/main.js"></script>
+    @RenderSection("ScriptsHome", false)
+</body>
 
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
-      (Load Extensions only on Local File Systems ! 
-       The following part can be removed on Server for On Demand Loading) -->
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.actions.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.migration.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="~/assets/js/revolution-slider/js/extensions/revolution.extension.video.min.js"
-    ></script>
-  </body>
-
-  <!-- Mirrored from html.kodesolution.live/s/studypress/v6.0/demo/index-mp-layout10.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2021 17:52:08 GMT -->
-</html>
+ 

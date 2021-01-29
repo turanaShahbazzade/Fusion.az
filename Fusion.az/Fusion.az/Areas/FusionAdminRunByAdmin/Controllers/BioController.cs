@@ -25,6 +25,7 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
         {
             return View(_context.Bios.FirstOrDefault());
         }
+       
         public async Task<IActionResult> Detail(int? id)
         {
             if (id == null) return NotFound();

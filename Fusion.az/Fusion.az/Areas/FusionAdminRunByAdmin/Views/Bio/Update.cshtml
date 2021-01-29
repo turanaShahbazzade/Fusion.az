@@ -22,7 +22,7 @@
                         <input asp-for="@Model.Mail" class="form-control">
                         <span class="text-danger" asp-validation-for="@Model.Mail"></span>
                     </div>
-                   
+
                 </div>
                 <div class="form-group row">
                     <label asp-for="@Model.Phone" class="col-sm-3 col-form-label"></label>
@@ -30,7 +30,7 @@
                         <input asp-for="@Model.Phone" class="form-control">
                         <span class="text-danger" asp-validation-for="@Model.Phone"></span>
                     </div>
-                    
+
                 </div>
                 <div class="form-group row">
                     <label asp-for="@Model.Address" class="col-sm-3 col-form-label"></label>
@@ -38,7 +38,23 @@
                         <input asp-for="@Model.Address" class="form-control">
                         <span class="text-danger" asp-validation-for="@Model.Address"></span>
                     </div>
-                  
+
+                </div>
+                <div class="form-group row">
+                    <label asp-for="@Model.OpenMonFri" class="col-sm-3 col-form-label">Open|Mday-Fday</label>
+                    <div class="col-sm-9">
+                        <input asp-for="@Model.OpenMonFri" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.OpenMonFri"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label asp-for="@Model.OpenSat" class="col-sm-3 col-form-label">Open|Saturday</label>
+                    <div class="col-sm-9">
+                        <input asp-for="@Model.OpenSat" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.OpenSat"></span>
+                    </div>
+
                 </div>
                 <div class="form-group row">
                     <label asp-for="@Model.Instagram" class="col-sm-3 col-form-label"></label>
