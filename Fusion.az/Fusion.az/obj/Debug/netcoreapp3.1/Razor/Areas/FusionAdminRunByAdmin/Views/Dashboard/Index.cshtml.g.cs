@@ -26,8 +26,15 @@ using Fusion.az.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\Areas\FusionAdminRunByAdmin\Views\_ViewImports.cshtml"
+using Fusion.az.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20cf055dfeb078c76c7bb9c8bdf7f8bdb69547d3", @"/Areas/FusionAdminRunByAdmin/Views/Dashboard/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"218c3bb593b4b3b045a2e54da91249c7688c01cb", @"/Areas/FusionAdminRunByAdmin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d21e35f525d6e1b694e626cd9493ed766d4f164f", @"/Areas/FusionAdminRunByAdmin/Views/_ViewImports.cshtml")]
     public class Areas_FusionAdminRunByAdmin_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

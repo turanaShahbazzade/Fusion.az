@@ -1,0 +1,27 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-lg-6">
+            <h3>Icon</h3>
+            <img src="~/assets/images/icons.png/@Model.Icon" />
+            <h3>
+                Title<h3 />
+                <p>@Model.Title</p>
+                <h3>Description</h3>
+                <p>@Model.Description</p>
+        </div>
+
+
+
+    </div>
+    <a class="btn mt-3" asp-controller="Feature" asp-action="Index"> Go Back </a>
+    <a class="btn btn-update mt-3" asp-controller="Feature" asp-action="Update" asp-route-id="@Model.Id"> Update </a>
+
+</div>
+

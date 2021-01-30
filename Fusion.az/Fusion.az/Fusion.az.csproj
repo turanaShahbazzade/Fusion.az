@@ -17,6 +17,7 @@
   <ItemGroup>
     <Folder Include="Areas\FusionAdminRunByAdmin\Data\" />
     <Folder Include="Areas\FusionAdminRunByAdmin\Models\" />
+    <Folder Include="wwwroot\assets\images\flaticon-png\small\" />
   </ItemGroup>
 
 </Project>

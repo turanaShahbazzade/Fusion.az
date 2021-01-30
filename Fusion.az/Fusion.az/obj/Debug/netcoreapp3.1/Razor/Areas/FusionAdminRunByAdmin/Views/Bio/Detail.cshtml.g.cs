@@ -26,8 +26,15 @@ using Fusion.az.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\Areas\FusionAdminRunByAdmin\Views\_ViewImports.cshtml"
+using Fusion.az.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd90", @"/Areas/FusionAdminRunByAdmin/Views/Bio/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"218c3bb593b4b3b045a2e54da91249c7688c01cb", @"/Areas/FusionAdminRunByAdmin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d21e35f525d6e1b694e626cd9493ed766d4f164f", @"/Areas/FusionAdminRunByAdmin/Views/_ViewImports.cshtml")]
     public class Areas_FusionAdminRunByAdmin_Views_Bio_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Bio>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("img-fluid"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -70,7 +77,7 @@ using Fusion.az.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-6\">\r\n            <p>Logo</p>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd905872", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd906119", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -150,7 +157,7 @@ AddHtmlAttributeValue("", 217, Model.Logo, 217, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral(" </li>\r\n            </ul>\r\n\r\n        </div>\r\n    </div>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd9010386", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd9010633", async() => {
                 WriteLiteral(" Go Back ");
             }
             );
@@ -169,7 +176,7 @@ AddHtmlAttributeValue("", 217, Model.Logo, 217, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd9011838", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fa4aeb7516a1d5ef95bedceee79a3c89ee6bd9012085", async() => {
                 WriteLiteral(" Update ");
             }
             );
