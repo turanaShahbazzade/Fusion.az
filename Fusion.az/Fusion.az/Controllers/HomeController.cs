@@ -27,14 +27,15 @@ namespace Fusion.az.Controllers
 
             HomeViewModel homevm = new HomeViewModel()
             {
-                Features = _context.Features.Where(f=>f.IsDeleted==false).ToList(),
-                Headers= _context.Headers.Where(h=>h.IsDeleted==false).ToList(),
+                Features = _context.Features.Where(f => f.IsDeleted == false).ToList(),
+                Headers = _context.Headers.ToList(),
+                FunFacts = _context.FunFacts.ToList(),
+                Courses = _context.Courses.Where(c => c.IsDeleted == false).ToList(),
                
             };
             return View(homevm);
         }
-
-
+      
         public IActionResult Privacy()
         {
             return View();

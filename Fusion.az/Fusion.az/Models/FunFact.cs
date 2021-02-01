@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Fusion.az.Models
 {
-    public class Header
+    public class FunFact
     {
         public int Id { get; set; }
-        [Required, StringLength(100)]
+        [Required] 
+        public string Icon { get; set; }
+        [Required]
+        public int Number { get; set; }
+        [Required, StringLength(50)]
         public string Title { get; set; }
-       
-        
-       
-
     }
 }

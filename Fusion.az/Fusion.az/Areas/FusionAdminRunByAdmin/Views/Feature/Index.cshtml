@@ -7,7 +7,7 @@
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Bio Table</h4>
+            <h4 class="card-title">Feature Table</h4>
 
             <div class="table-responsive">
                 <table class="table table-striped">
@@ -41,21 +41,13 @@
                                 </td>
 
                                 <td>
-                                    @if (features.Description.Length > 20)
-                                    {
-                                        @features.Description.Substring(0, 20)
-
-                                    }
-                                    else
-                                    {
-                                        @features.Description
-                                    }
-
+                                    
+                                    @(features.Description.Length>20 ? features.Description.Substring(0, 20)+"..." : features.Description)
                                 </td>
                                 <td>
                                     <a class="btn" asp-controller="Feature" asp-action="Detail" asp-route-id="@features.Id"> Detail </a>
                                     <a class="btn btn-update" asp-controller="Feature" asp-action="Update" asp-route-id="@features.Id"> Update </a>
-                                    <a class="btn" asp-controller="Feature" asp-action="Delete" asp-route-id="@features.Id"> Delete </a>
+                                    
 
                                 </td>
                             </tr>

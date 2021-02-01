@@ -1,15 +1,16 @@
 ﻿@model Bio
+
 <footer id="footer"
         class="footer divider layer-overlay overlay-dark-9"
-        data-bg-img="images/bg/bg2.jpg">
+       >
     <div class="container">
         <div class="row border-bottom">
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
                     <img class="mt-5 mb-20"
-                        alt=""
-                        src="~/assets/images/@Model.Logo" />
-                    <p>      
+                         alt=""
+                         src="~/assets/images/@Model.Logo" />
+                    <p>
                         <i class="fa fa-location-arrow text-theme-color-2 mr-5"></i>
                         @Model.Address , Baku, Azerbaijan.
                     </p>
@@ -64,12 +65,13 @@
                 </div>
             </div>
         </div>
+        <hr />
         <div class="row mt-30">
             <div class="col-md-2">
                 <div class="widget dark">
                     <h5 class="widget-title mb-10">Call Us Now</h5>
                     <div class="text-gray">
-                       @Model.Phone
+                        @Model.Phone
                     </div>
                 </div>
             </div>
@@ -114,32 +116,32 @@
                     </form>
                     <!-- Mailchimp Subscription Form Validation-->
                     <script type="text/javascript">
-                                $("#mailchimp-subscription-form-footer").ajaxChimp({
-                                    callback: mailChimpCallBack,
-                                    url:
-                                        "//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e",
-                                });
+                        $("#mailchimp-subscription-form-footer").ajaxChimp({
+                            callback: mailChimpCallBack,
+                            url:
+                                "//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e",
+                        });
 
-                                function mailChimpCallBack(resp) {
-                                    // Hide any previous response text
-                                    var $mailchimpform = $(
-                                        "#mailchimp-subscription-form-footer"
-                                    ),
-                                        $response = "";
-                                    $mailchimpform.children(".alert").remove();
-                                    if (resp.result === "success") {
-                                        $response =
-                                            '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-                                            resp.msg +
-                                            "</div>";
-                                    } else if (resp.result === "error") {
-                                        $response =
-                                            '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-                                            resp.msg +
-                                            "</div>";
-                                    }
-                                    $mailchimpform.prepend($response);
-                                }
+                        function mailChimpCallBack(resp) {
+                            // Hide any previous response text
+                            var $mailchimpform = $(
+                                "#mailchimp-subscription-form-footer"
+                            ),
+                                $response = "";
+                            $mailchimpform.children(".alert").remove();
+                            if (resp.result === "success") {
+                                $response =
+                                    '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+                                    resp.msg +
+                                    "</div>";
+                            } else if (resp.result === "error") {
+                                $response =
+                                    '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+                                    resp.msg +
+                                    "</div>";
+                            }
+                            $mailchimpform.prepend($response);
+                        }
                     </script>
                     <!-- Mailchimp Subscription Form Ends Here -->
                 </div>

@@ -1,0 +1,65 @@
+﻿@model List<Course>
+@{
+    ViewData["Title"] = "Course";
+}
+
+
+
+@foreach (Course courses in Model)
+{
+
+    if (ViewBag.num == 1)
+    {
+        <div class="col-lg-6">
+            <div class="item">
+                <div class="campaign bg-white maxwidth500 mb-30">
+                    <div class="thumb">
+                        <img src="~/assets/images/Course/@courses.Image"
+                             alt=""
+                             class="img-fullwidth course-card" />
+                        <div class="campaign-overlay"></div>
+                    </div>
+                    <div class="campaign-details clearfix p-15 pt-10 pb-10">
+                        <h4 class="font-weight-700 mt-0">
+                            <a href="#">@courses.Name.ToUpper()</a>
+                        </h4>
+
+                        <p>
+                            @(courses.Description.Length>50? courses.Description.Substring(0,50)+"..." :courses.Description)
+                        </p>
+                        <div class="campaign-bottom border-top clearfix mt-20">
+                            <a class="btn btn-xs btn-theme-colored font-weight-600 font-11  flip mt-10" asp-controller="Home" asp-action="Course">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="item">
+            <div class="campaign bg-white maxwidth500 mb-30">
+                <div class="thumb">
+                    <img src="~/assets/images/Course/@courses.Image"
+                         alt=""
+                         class="img-fullwidth course-card" />
+                    <div class="campaign-overlay"></div>
+                </div>
+                <div class="campaign-details clearfix p-15 pt-10 pb-10">
+                    <h4 class="font-weight-700 mt-0">
+                        <a href="#">@courses.Name.ToUpper()</a>
+                    </h4>
+
+                    <p>
+                        @(courses.Description.Length>50? courses.Description.Substring(0,50)+"..." :courses.Description)
+                    </p>
+                    <div class="campaign-bottom border-top clearfix mt-20">
+                        <a class="btn btn-xs btn-theme-colored font-weight-600 font-11  flip mt-10" asp-controller="Home" asp-action="Course">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+}

@@ -18,5 +18,7 @@ namespace Fusion.az.DAL
         public DbSet<Bio> Bios { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Header> Headers { get; set; }
+        public DbSet<FunFact> FunFacts { get; set; }
+        public DbSet<Course> Courses { get; set; }
     }
 }

@@ -6437,3 +6437,18 @@ blockquote p {
   border-color: #eeeeee;
   color: #333333;
 }
+.course-card{
+    height:200px;
+}
+
+.item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-course {
+    background-color: #202C45;
+    color:white;
+}
+.btn-course:hover {
+    
+    color: white;
+}

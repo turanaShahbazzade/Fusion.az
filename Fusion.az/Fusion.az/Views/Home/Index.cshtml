@@ -10,17 +10,15 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="text-uppercase mt-0 line-height-1">
-                        @Model.Headers.ElementAt(0).Title
+                       @Model.Headers.ElementAt(0).Title.ToUpper()
                     </h2>
-                    <p>
-                        @Model.Headers.ElementAt(0).Description
-                    </p>
+                    
                 </div>
             </div>
         </div>
         <div class="section-content">
             <div class="row">
-                @foreach (Feature feature in Model.Features )
+                @foreach (Feature feature in Model.Features)
                 {
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="text-center mb-30 p-10">
@@ -31,10 +29,20 @@
                             </a>
                             <h4 class="font-weight-600 mt-20">@feature.Title</h4>
                             <p>
-                                @feature.Description
+                                @(feature.Description.Length>50 ? feature.Description.Substring(0,50)+"...":feature.Description)
                             </p>
-                            <a class="btn btn-default btn-theme-colored btn-sm mt-10"
-                               href="#">Read More</a>
+                            @if (feature.Title == "Teachers")
+                            {
+                                <a class="btn btn-course btn-theme-colored btn-sm mt-10" asp-controller="Teacher" asp-action="Index">Read More</a>
+                            }
+                            @if (feature.Title == "Courses")
+                            {
+                                <a class="btn btn-course btn-theme-colored btn-sm mt-10" asp-controller="Course" asp-action="Index">Read More</a>
+                            }
+                            @if (feature.Title == "Successes")
+                            {
+                                <a class="btn btn-course btn-theme-colored btn-sm mt-10" asp-controller="Success" asp-action="Index">Read More</a>
+                            }
                         </div>
                     </div>
                 }
@@ -45,3 +53,63 @@
         </div>
     </div>
 </section>
+<!-- Section: FunFact -->
+<section class="divider parallax layer-overlay overlay-theme-colored-9">
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-uppercase mt-0 line-height-1">
+                       @Model.Headers.ElementAt(1).Title.ToUpper()
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (FunFact funFact in Model.FunFacts)
+            {
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                    <div class="funfact text-center">
+                        @Html.Raw(funFact.Icon)
+                        <h2 data-animation-duration="2000"
+                            data-value="@funFact.Number"
+                            class="animate-number text-white mt-0 font-38 font-weight-500">
+                            0
+                        </h2>
+                        <h5 class="text-white text-uppercase mb-0">@funFact.Title</h5>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</section>
+<!-- Section: Courses -->
+<section class="bg-lighter">
+    <div class="container ">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-uppercase title">
+                        @Model.Headers.ElementAt(2).Title.ToUpper()
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row multi-row-clearfix ">
+            <div class="col-md-12">
+                <div class="owl-carousel-3col" data-nav="true">
+                    @await Component.InvokeAsync("Course",0)
+
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-course mt-3 text-center" asp-controller="Course" asp-action="Index"> See All Courses </a>
+
+            </div>
+        </div>
+        
+    </div>
+</section> 
