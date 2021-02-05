@@ -20,8 +20,9 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
             _context = context;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index() 
         {
+            ViewBag.CourseCount = _context.Courses.Count();
             List<Course> courses = _context.Courses.Where(c=>c.IsDeleted==false).ToList();
             return View(courses);
         }
@@ -40,6 +41,7 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create (Course course)
         {
+           
             if (course.Photo == null)
             {
                 ModelState.AddModelError("Photo", "Photo is required");
@@ -54,8 +56,7 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
             {
                 ModelState.AddModelError("Photo", "Photo size must be less than 200kb");
                 return View();
-            }
-
+            } 
             string filename = Guid.NewGuid().ToString() + course.Photo.FileName;
             string path = Path.Combine(_env.WebRootPath, "assets/images/Course", filename);
             using(FileStream fileStream = new FileStream(path, FileMode.Create))
@@ -63,8 +64,7 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
                 await course.Photo.CopyToAsync(fileStream);
             }
             course.Image = filename;
-            course.Name = course.NameFromFront;
-            course.Description = course.DescriptionFromFront;
+            course.IsDeleted = false;
             await  _context.Courses.AddAsync(course);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -120,6 +120,7 @@ namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
 
         public async Task <IActionResult> Delete(int? id)
         {
+           
             if (id == null) return NotFound();
             Course courses = await _context.Courses.FindAsync(id);
             if (courses == null) return NotFound();

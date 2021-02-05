@@ -21610,10 +21610,11 @@ dl li {
 }
 .btn-orange {
     background-color: #f9a01af7;
-    color:white;
+    color:white ;
 }
 .btn-update {
     background-color: #202C45;
+    color:white;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item .item-thumbnail .item-icon i {

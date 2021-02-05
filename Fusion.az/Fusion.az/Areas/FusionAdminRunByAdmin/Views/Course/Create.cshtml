@@ -18,23 +18,23 @@
 
                 </div>
                 <div class="form-group row">
-                    <label asp-for="@Model.NameFromFront" class="col-sm-3 col-form-label">Name</label>
+                    <label asp-for="@Model.Name" class="col-sm-3 col-form-label">Name</label>
                     <div class="col-sm-9">
-                        <input asp-for="@Model.NameFromFront" class="form-control">
-                        <span class="text-danger" asp-validation-for="@Model.NameFromFront"></span>
+                        <input asp-for="@Model.Name" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.Name"></span>
                     </div>
 
                 </div>
                 <div class="form-group row">
-                    <label asp-for="@Model.DescriptionFromFront" class="col-sm-3 col-form-label">Description</label>
+                    <label asp-for="@Model.Description" class="col-sm-3 col-form-label">Description</label>
                     <div class="col-sm-9">
-                        <input asp-for="@Model.DescriptionFromFront" class="form-control">
-                        <span class="text-danger" asp-validation-for="@Model.DescriptionFromFront"></span>
+                        <input asp-for="@Model.Description" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.Description"></span>
                     </div>
 
                 </div>
 
-                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button type="submit" class="btn btn-orange mr-2">Submit</button>
                 <a class="btn btn-update" asp-action="Index">Go Back</a>
             </form>
         </div>

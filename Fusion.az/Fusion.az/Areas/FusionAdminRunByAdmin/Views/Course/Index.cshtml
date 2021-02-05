@@ -28,30 +28,61 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (Course courses in Model)
+                        @if (ViewBag.CourseCount >=4)
                         {
-                            <tr>
-                                <td class="py-1">
-                                    <img src="~/assets/images/Course/@courses.Image" alt="image" />
-                                </td>
-                                <td>
-                                    @courses.Name
-                                </td>
+                            foreach (Course courses in Model)
+                            {
+                                <tr>
+                                    <td class="py-1">
+                                        <img src="~/assets/images/Course/@courses.Image" alt="image" />
+                                    </td>
+                                    <td>
+                                        @courses.Name.ToUpper()
+                                    </td>
 
-                                <td>
+                                    <td>
 
-                                    @(courses.Description.Length>20 ? courses.Description.Substring(0, 20)+"..." : courses.Description)
-                                </td>
-                                <td>
-                                    <a class=" btn btn-orange" asp-controller="Course" asp-action="Detail" asp-route-id="@courses.Id"> Detail </a>
-                                    <a class="btn btn-update" asp-controller="Course" asp-action="Update" asp-route-id="@courses.Id"> Update </a>
-                                    <a class="btn btn-danger" asp-controller="Course" asp-action="Delete" asp-route-id="@courses.Id"> Delete </a>
+                                        @(courses.Description.Length>20 ? courses.Description.Substring(0, 20)+"..." : courses.Description)
+                                    </td>
+                                    <td>
+                                        <a class=" btn btn-orange" asp-controller="Course" asp-action="Detail" asp-route-id="@courses.Id"> Detail </a>
+                                        <a class="btn btn-update" asp-controller="Course" asp-action="Update" asp-route-id="@courses.Id"> Update </a>
+                                        <a class="btn btn-danger" asp-controller="Course" asp-action="Delete" asp-route-id="@courses.Id"> Delete </a>
 
 
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
+                            }
+
+
                         }
+                        else
+                        {
+                            @foreach (Course courses in Model)
+                            {
+                                <tr>
+                                    <td class="py-1">
+                                        <img src="~/assets/images/Course/@courses.Image" alt="image" />
+                                    </td>
+                                    <td>
+                                        @courses.Name
+                                    </td>
+
+                                    <td>
+
+                                        @(courses.Description.Length>20 ? courses.Description.Substring(0, 20)+"..." : courses.Description)
+                                    </td>
+                                    <td>
+                                        <a class=" btn btn-orange" asp-controller="Course" asp-action="Detail" asp-route-id="@courses.Id"> Detail </a>
+                                        <a class="btn btn-update" asp-controller="Course" asp-action="Update" asp-route-id="@courses.Id"> Update </a>
+                                       
+
+                                    </td>
+                                </tr>
+                            }
+                        }
+
                     </tbody>
                 </table>
             </div>

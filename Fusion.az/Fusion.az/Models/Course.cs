@@ -16,13 +16,12 @@ namespace Fusion.az.Models
       
         [NotMapped] 
         public IFormFile Photo { get; set; }
-        [Required,StringLength(60)]
+       
+        [Required(ErrorMessage = "The name field is required"), StringLength(60)]
         public string Name { get; set; } 
-        [Required(ErrorMessage ="The name field is required"), NotMapped]
-        public string NameFromFront { get; set; }
-        [Required(ErrorMessage = "The Description field is required"), NotMapped]
-        public string DescriptionFromFront { get; set; }
-        [Required]
+       
+       
+        [Required(ErrorMessage = "The Description field is required")]
         public string Description { get; set; } 
         public bool IsDeleted { get; set; }
         public DateTime? DeletedTime { get; set; }
