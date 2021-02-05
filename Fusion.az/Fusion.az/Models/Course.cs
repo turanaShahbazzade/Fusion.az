@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,8 +13,15 @@ namespace Fusion.az.Models
         public int Id { get; set; }
         [Required]
         public string Image { get; set; }
-        [Required, StringLength(60)]
-        public string Name { get; set; }
+      
+        [NotMapped] 
+        public IFormFile Photo { get; set; }
+        [Required,StringLength(60)]
+        public string Name { get; set; } 
+        [Required(ErrorMessage ="The name field is required"), NotMapped]
+        public string NameFromFront { get; set; }
+        [Required(ErrorMessage = "The Description field is required"), NotMapped]
+        public string DescriptionFromFront { get; set; }
         [Required]
         public string Description { get; set; } 
         public bool IsDeleted { get; set; }

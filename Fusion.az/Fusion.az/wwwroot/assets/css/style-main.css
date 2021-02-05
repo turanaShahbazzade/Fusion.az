@@ -6452,3 +6452,6 @@ blockquote p {
     
     color: white;
 }
+.btn-delete{
+    background-color:red !important;
+}

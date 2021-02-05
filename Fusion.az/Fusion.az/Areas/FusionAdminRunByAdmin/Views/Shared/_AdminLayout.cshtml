@@ -71,36 +71,25 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="mdi mdi-circle-outline menu-icon"></i>
-                            <span class="menu-title">Bio</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-area="FusionAdminRunByAdmin" asp-controller="Bio" asp-action="Index">Bios</a></li>
 
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="mdi mdi-circle-outline menu-icon"></i>
-                            <span class="menu-title">Features</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-area="FusionAdminRunByAdmin" asp-controller="Feature" asp-action="Index">Feature</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/charts/chartjs.html">
+                        <a class="nav-link" asp-controller="Bio" asp-action="Index">
                             <i class="mdi mdi-chart-pie menu-icon"></i>
-                            <span class="menu-title">Charts</span>
+                            <span class="menu-title">Bio</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" asp-controller="Feature" asp-action="Index">
+                            <i class="mdi mdi-chart-pie menu-icon"></i>
+                            <span class="menu-title">Services</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Course" asp-action="Index">
+                            <i class="mdi mdi-chart-pie menu-icon"></i>
+                            <span class="menu-title">Courses</span>
                         </a>
                     </li>
                     <li class="nav-item">

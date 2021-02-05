@@ -1,0 +1,39 @@
+﻿
+@model Course
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Image</h3>
+                    <img class="img-fluid" src="~/assets/images/Course/@Model.Image" />
+                </div>
+                <div class="col-lg-6">
+
+                    <h3>Course Name</h3>
+                    <p>@Model.Name</p>
+                    <h3>Course Description</h3>
+                    <p>@Model.Description</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <h4>Are you sure to Delete?</h4> 
+    <form method="post">
+        <button class="btn btn-warning" type="submit">Delete</button>
+    </form>
+    <a class="btn mt-3" asp-controller="Course" asp-action="Index"> Go Back </a>
+
+</div>
+

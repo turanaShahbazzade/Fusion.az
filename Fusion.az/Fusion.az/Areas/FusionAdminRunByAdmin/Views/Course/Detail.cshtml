@@ -1,0 +1,32 @@
+﻿@model Course 
+@{
+    ViewData["Title"] = "Detail";
+} 
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Image</h3>
+                    <img class="img-fluid" src="~/assets/images/Course/@Model.Image" />
+                </div>
+                <div class="col-lg-6">
+
+                    <h3>Course Name</h3>
+                    <p>@Model.Name</p>
+                    <h3>Course Description</h3>
+                    <p>@Model.Description</p>
+                </div>
+            </div>        
+        </div>
+
+
+
+    </div>
+    <a class="btn mt-3" asp-controller="Course" asp-action="Index"> Go Back </a>
+    <a class="btn btn-update mt-3" asp-controller="Course" asp-action="Update" asp-route-id="@Model.Id"> Update </a>
+
+</div>

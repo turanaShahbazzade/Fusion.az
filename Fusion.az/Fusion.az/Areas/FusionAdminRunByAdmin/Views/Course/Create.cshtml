@@ -1,0 +1,47 @@
+﻿@model Course  
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Create New Course</h4>
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <label asp-for="@Model.Photo" class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9">
+                        <input asp-for="@Model.Photo" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.Photo"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label asp-for="@Model.NameFromFront" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input asp-for="@Model.NameFromFront" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.NameFromFront"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label asp-for="@Model.DescriptionFromFront" class="col-sm-3 col-form-label">Description</label>
+                    <div class="col-sm-9">
+                        <input asp-for="@Model.DescriptionFromFront" class="form-control">
+                        <span class="text-danger" asp-validation-for="@Model.DescriptionFromFront"></span>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <a class="btn btn-update" asp-action="Index">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_Validation" />
+}
+
+

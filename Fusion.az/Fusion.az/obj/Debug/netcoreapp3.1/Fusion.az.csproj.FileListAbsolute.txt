@@ -167,3 +167,8 @@ C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Feature\Update.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Course\Index.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Course\Default.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Detail.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Create.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Update.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Delete.cshtml.g.cs
