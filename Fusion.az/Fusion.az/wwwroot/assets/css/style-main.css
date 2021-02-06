@@ -6455,3 +6455,54 @@ blockquote p {
 .btn-delete{
     background-color:red !important;
 }
+
+/*SLIDER*/
+
+
+#slider {
+  position: relative;
+}
+
+#slider .slider img {
+  max-height: 700px;
+  min-height: 700px;
+  width: 100% !important;
+}
+
+#slider .context {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+#slider .context h1, .context h2 {
+  font-size: 41px;
+  line-height: 51px;
+  font-family: Lora, serif;
+}
+
+#slider .context h1 span {
+  color: #f34f3f;
+}
+
+#slider .context p {
+  font-size: 17px;
+  line-height: 29px;
+  font-family: Lora, serif;
+}
+
+@media only screen and (max-width: 576px) {
+    #slider .slider img {
+        max-height: 400px;
+        min-height: 400px;
+    }
+    #slider .context h1, .context h2 {
+        font-size: 30px;
+    }
+    #slider .context p {
+        font-size: 14px;
+    }
+}

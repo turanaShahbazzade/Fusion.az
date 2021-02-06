@@ -3,6 +3,39 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!-- SLIDER START -->
+
+<section id="slider">
+    <div class="owl-carousel slider">
+        <img src="~/assets/images/fusion.slder.1.jpg" alt=""> 
+        <img src="~/assets/images/fusion.slider2.jpg" alt="">
+        <img src="~/assets/images/fusion.slider3.jpg" alt="">
+    </div>
+    <div class="container context pl-lg-5 ml-lg-3">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text">
+                    <h1 class="animate__animated animate__fadeInDownBig">You Gonna <span>Speak</span>!</h1>
+                    <h2 class="animate__animated animate__fadeInRightBig">Fusion Course</h2>
+                    <p class="text-black-50 d-none d-sm-block animate__animated animate__fadeInUpBig">
+                        Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
+                        make it special cursus a sit amet mauris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDER END -->
+
+@{
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+}
+
+
+<!-- slider section end -->
 <!-- Section: Services -->
 <section id="services" class="">
     <div class="container pb-40">
@@ -10,9 +43,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="text-uppercase mt-0 line-height-1">
-                       @Model.Headers.ElementAt(0).Title.ToUpper()
+                        @Model.Headers.ElementAt(0).Title.ToUpper()
                     </h2>
-                    
+
                 </div>
             </div>
         </div>
@@ -60,7 +93,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="text-uppercase mt-0 line-height-1">
-                       @Model.Headers.ElementAt(1).Title.ToUpper()
+                        @Model.Headers.ElementAt(1).Title.ToUpper()
                     </h2>
 
                 </div>
@@ -101,7 +134,7 @@
         <div class="row multi-row-clearfix ">
             <div class="col-md-12">
                 <div class="owl-carousel-3col" data-nav="true">
-                    @await Component.InvokeAsync("Course",0)
+                    @await Component.InvokeAsync("Course", 0)
 
                 </div>
             </div>
@@ -110,6 +143,6 @@
 
             </div>
         </div>
-        
+
     </div>
-</section> 
+</section>
