@@ -6455,3 +6455,13 @@ blockquote p {
 .btn-delete{
     background-color:red !important;
 }
+#trial {
+    background-color: #F7F9FB;
+}
+.btn-general {
+  background-color: #202C45 !important;
+  color:white;
+}
+.btn-general:hover{
+    color:white;
+}

@@ -172,3 +172,4 @@ C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Create.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Update.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\Course\Delete.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Trial\Index.cshtml.g.cs
