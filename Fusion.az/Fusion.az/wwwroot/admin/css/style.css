@@ -21038,6 +21038,8 @@ dl li {
 
 .auth .brand-logo {
   margin-bottom: 2rem;
+  display:flex;
+  justify-content:center;
 }
 
 .auth .brand-logo img {

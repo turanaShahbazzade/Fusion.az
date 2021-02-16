@@ -15,7 +15,14 @@
                                 </li>
                                 <li class="text-white">|</li>
                                 <li>
-                                    <a class="text-white" href="#">Login</a>
+                                  @if(!User.Identity.IsAuthenticated)
+                                    {
+                                    <a asp-controller="Account" asp-action="Login" class="text-white">Login</a>
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="Account" asp-action="Logout" class="text-white">Logout</a>
+                                    }
                                 </li>
                             </ul>
                         </div>
@@ -115,30 +122,19 @@
                         <ul class="pull-right flip hidden-sm hidden-xs">
                             <li>
                                 <!-- Modal: Book Now Starts -->
-                                <a class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-25 pr-15 pl-15"
-                                   data-toggle="modal"
-                                   data-target="#BSParentModal"
-                                   href="#">Login</a>
+                                @if(!User.Identity.IsAuthenticated)
+                                {
+                                    <a asp-controller="Account" asp-action="Login" class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-25 pr-15 pl-15">Login</a>
+                                }
+                                else
+                                { 
+                                   <span style="color:white; font-style:italic">@ViewBag.Name</span>
+                                    <a asp-controller="Account" asp-action="Logout" class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-25 pr-15 pl-15">Logout</a>
+                                }
                                 <!-- Modal: Book Now End -->
                             </li>
                         </ul>
-                        <div id="top-search-bar" class="collapse">
-                            <div class="container">
-                                <form role="search"
-                                      action="#"
-                                      class="search_form_top"
-                                      method="get">
-                                    <input type="text"
-                                           placeholder="Type text and press Enter..."
-                                           name="s"
-                                           class="form-control"
-                                           autocomplete="off" />
-                                    <span class="search-close">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                </form>
-                            </div>
-                        </div>
+                       
                     </nav>
                 </div>
             </div>
