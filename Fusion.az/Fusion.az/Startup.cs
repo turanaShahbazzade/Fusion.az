@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Fusion.az.DAL;
+using Fusion.az.Helpers;
 using Fusion.az.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,7 +44,7 @@ namespace Fusion.az
                
 
 
-            }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>(); 
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>().AddErrorDescriber<AzIdentityErrorDescriber>(); 
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:Default"]);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Fusion.az.DAL;
+using Fusion.az.Extentions;
 using Fusion.az.Models;
 using Fusion.az.ViewModels;
 using Microsoft.AspNetCore.Identity;
@@ -15,23 +16,59 @@ namespace Fusion.az.Controllers
         private readonly AppDbContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(AppDbContext context, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public AccountController(AppDbContext context, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,RoleManager<IdentityRole> roleManager)
         {
             _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
         public IActionResult Login()
         {
-            AccountViewModel model = new AccountViewModel()
+            LoginViewModel model = new LoginViewModel()
             {
                 Bio = _context.Bios.FirstOrDefault(),
             };
            
             return View(model);
         } 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel login) {
 
+            LoginViewModel model = new LoginViewModel()
+            {
+                Bio = _context.Bios.FirstOrDefault(),
+               
+            };
+            if (!ModelState.IsValid) return View(model);
+            AppUser user = await _userManager.FindByEmailAsync(login.Email);
+            if (user== null)
+            {
+                ModelState.AddModelError("", "Email or password is invalid");
+                return View(model);
+            }
+            if (user.isDeleted)
+            {
+                ModelState.AddModelError("", "The account is not exist");
+                return View(model);
+            }
+            Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, login.Password, true, true);
+            if (signInResult.IsLockedOut)
+            {
+                ModelState.AddModelError("", "Please try later");
+                return View(model);
+            }
+            if (!signInResult.Succeeded)
+            {
+                ModelState.AddModelError("", "Email or password is invalid ");
+                return View(model);
+            }
+            return RedirectToAction("Index", "Home"); 
+
+        }
         public IActionResult Register()
         {
         RegisterViewModel model = new RegisterViewModel()
@@ -76,7 +113,8 @@ namespace Fusion.az.Controllers
                     ModelState.AddModelError("", error.Description);
                 }
                 return View(model);
-            } 
+            }
+            await _userManager.AddToRoleAsync( newUser,Roles.Member.ToString());
             await _signInManager.SignInAsync(newUser, true);
             return RedirectToAction("Index", "Home");
 
@@ -86,6 +124,15 @@ namespace Fusion.az.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        #region Create USerRole
 
+        //public async Task CreateUserRole()
+        //{
+        //    if (!(await _roleManager.RoleExistsAsync(Roles.Admin.ToString())))
+        //        await _roleManager.CreateAsync(new IdentityRole { Name = Roles.Admin.ToString() });
+        //    if (!(await _roleManager.RoleExistsAsync(Roles.Member.ToString())))
+        //        await _roleManager.CreateAsync(new IdentityRole { Name = Roles.Member.ToString() });
+        //}
+        #endregion
     }
 }

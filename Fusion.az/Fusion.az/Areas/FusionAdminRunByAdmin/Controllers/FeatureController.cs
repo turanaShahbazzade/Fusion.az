@@ -5,12 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Fusion.az.DAL;
 using Fusion.az.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fusion.az.Areas.FusionAdminRunByAdmin.Controllers
 {
     [Area("FusionAdminRunByAdmin")]
+    [Authorize(Roles ="Admin")]
     public class FeatureController : Controller
     {
        
