@@ -1,0 +1,14 @@
+.test-intro {
+    list-style: circle;
+    
+}
+.btn-test{
+    background-color:#202C45;
+    color: white;
+}
+.btn-test:hover{
+    color: white;
+} 
+.reading{
+    overflow:scroll;
+}

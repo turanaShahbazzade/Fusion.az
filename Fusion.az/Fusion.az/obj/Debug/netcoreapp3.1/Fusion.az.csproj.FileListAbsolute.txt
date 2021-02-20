@@ -176,3 +176,6 @@ C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Areas\FusionAdminRunByAdmin\Views\User\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\GeneralTestInfo\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\GeneralTest\Index.cshtml.g.cs
+C:\Users\admin\Desktop\CodeAcademy\MyFrontEndProjects\Fusion.az\Fusion.az\Fusion.az\obj\Debug\netcoreapp3.1\Razor\Views\GeneralReading\Index.cshtml.g.cs

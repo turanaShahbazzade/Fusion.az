@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fusion.az.Controllers
 {
-    public class TrialController : Controller
+    public class GeneralTestController : Controller
     {
         public IActionResult Index()
-        { 
+        {
             return View();
         }
     }
