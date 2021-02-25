@@ -20,5 +20,7 @@ namespace Fusion.az.DAL
         public DbSet<Header> Headers { get; set; }
         public DbSet<FunFact> FunFacts { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
     }
 }
